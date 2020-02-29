@@ -1,5 +1,5 @@
 .cljs_node_repl
 .conjure.edn
 .cpcache
-deps.edn
 out
+main.js
