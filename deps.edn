@@ -1,1 +1,4 @@
-{:deps {org.clojure/clojurescript {:mvn/version "1.10.520"}}}
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.520"}
+        org.clojure/core.async {:mvn/version "1.0.567"}}
+ :aliases
+ {:prepl {:jvm-opts ["-Dclojure.server.node={:port,5556,:accept,cljs.server.node/prepl}"]}}}
