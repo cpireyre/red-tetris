@@ -2,7 +2,7 @@
 
 (def tetroes [::L ::J ::T ::I ::Z ::S ::O])
 
-(defn seeded-random-seq
+(defn- seeded-random-seq
   "Returns a pseudorandom lazy seq of elements of coll, with seed s.
    Uses hash-fn as step function."
   [coll hash-fn s]
