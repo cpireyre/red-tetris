@@ -2,7 +2,7 @@
   (:require [red-tetris.tetroes :as tetroes]
             [cljs.core.async :refer [go go-loop chan take! onto-chan <! timeout]]))
 
-(let [c (tetroes/random-tetroes 43)
+(let [c (tetroes/random-tetroes)
         tetroes-chan (chan)]
     (onto-chan tetroes-chan c)
     (go

@@ -11,8 +11,9 @@
 
 (defn random-tetroes
   "Returns a pseudorandom lazy seq of tetrominoes, with seed s."
-  [s]
-  (seeded-random-seq tetroes m3-hash-int s))
+  ([]  (random-tetroes (rand-int 65536)))
+  ([s] (seeded-random-seq tetroes m3-hash-int s)))
+  
 
 (comment
   (def sss (chan))
