@@ -10,7 +10,7 @@
     (map select (iterate hash-fn s))))
 
 (defn random-tetroes
-  "Returns a pseudorandom lazy seq of tetrominoes, with seed s."
+  "Returns a pseudorandom lazy seq of tetrominoes, with optional seed s."
   ([]  (random-tetroes (rand-int 65536)))
   ([s] (seeded-random-seq tetroes m3-hash-int s)))
   
