@@ -12,7 +12,9 @@
 (defn random-tetroes
   "Returns a pseudorandom lazy seq of tetrominoes, with seed s."
   [s]
-  (seeded-random-seq tetroes m3-hash-int s))
+  (seeded-random-seq tetroes
+                    #?(:clj hash :cljs m3-hash-int)
+                    s))
   
 (defn random-tetroes!
   "Returns a random lazy seq of tetrominoes."
@@ -20,9 +22,12 @@
   (random-tetroes (rand-int 2147483647)))
 
 (comment
+  (for [x (range 10)]
+    (print (hash x) \newline))
   (def sss (chan))
   (def bbb (random-tetroes 5))
   (def ccc (random-tetroes 5))
+  (take 9 (random-tetroes!))
   (onto-chan sss bbb)
   (realized? (rest bbb))
   (realized? bbb) ; false
