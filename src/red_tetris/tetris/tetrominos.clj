@@ -1,4 +1,4 @@
-(ns red-tetris.tetroes
+(ns red-tetris.tetris.tetrominos
   (:require [clojure.core.matrix :as matrix]))
 
 ;; This isn't cljc because of core.matrix
