@@ -24,96 +24,96 @@
                        [0 0 0]]))
 
 ;; J
-(def J1 (matrix/array [[0 0 1]
-                       [0 0 1]
-                       [0 1 1]]))
+(def J1 (matrix/array [[0 0 2]
+                       [0 0 2]
+                       [0 2 2]]))
 
-(def J2 (matrix/array [[1 1 1]
-                       [0 0 1]
+(def J2 (matrix/array [[2 2 2]
+                       [0 0 2]
                        [0 0 0]]))
 
-(def J3 (matrix/array [[1 1 0]
-                       [1 0 0]
-                       [1 0 0]]))
+(def J3 (matrix/array [[2 2 0]
+                       [2 0 0]
+                       [2 0 0]]))
 
 (def J4 (matrix/array [[0 0 0]
-                       [1 0 0]
-                       [1 1 1]]))
+                       [2 0 0]
+                       [2 2 2]]))
 
 ;; T
-(def T1 (matrix/array [[1 1 1]
-                       [0 1 0]
+(def T1 (matrix/array [[3 3 3]
+                       [0 3 0]
                        [0 0 0]]))
 
-(def T2 (matrix/array [[1 0 0]
-                       [1 1 0]
-                       [1 0 0]]))
+(def T2 (matrix/array [[3 0 0]
+                       [3 3 0]
+                       [3 0 0]]))
 
 (def T3 (matrix/array [[0 0 0]
-                       [0 1 0]
-                       [1 1 1]]))
+                       [0 3 0]
+                       [3 3 3]]))
 
-(def T4 (matrix/array [[0 0 1]
-                       [0 1 1]
-                       [0 0 1]]))
+(def T4 (matrix/array [[0 0 3]
+                       [0 3 3]
+                       [0 0 3]]))
 
 ;; I
-(def I1 (matrix/array [[1 1 1 1]
+(def I1 (matrix/array [[4 4 4 4]
                        [0 0 0 0]
                        [0 0 0 0]
                        [0 0 0 0]]))
 
-(def I2 (matrix/array [[1 0 0 0]
-                       [1 0 0 0]
-                       [1 0 0 0]
-                       [1 0 0 0]]))
+(def I2 (matrix/array [[4 0 0 0]
+                       [4 0 0 0]
+                       [4 0 0 0]
+                       [4 0 0 0]]))
 
 (def I3 (matrix/array [[0 0 0 0]
                        [0 0 0 0]
                        [0 0 0 0]
-                       [1 1 1 1]]))
+                       [4 4 4 4]]))
 
-(def I4 (matrix/array [[0 0 0 1]
-                       [0 0 0 1]
-                       [0 0 0 1]
-                       [0 0 0 1]]))
+(def I4 (matrix/array [[0 0 0 4]
+                       [0 0 0 4]
+                       [0 0 0 4]
+                       [0 0 0 4]]))
 
 ;; Z
-(def Z1 (matrix/array [[1 1 0]
-                       [0 1 1]
+(def Z1 (matrix/array [[5 5 0]
+                       [0 5 5]
                        [0 0 0]]))
 
-(def Z2 (matrix/array [[0 1 0]
-                       [1 1 0]
-                       [1 0 0]]))
+(def Z2 (matrix/array [[0 5 0]
+                       [5 5 0]
+                       [5 0 0]]))
 
 (def Z3 (matrix/array [[0 0 0]
-                       [1 1 0]
-                       [0 1 1]]))
+                       [5 5 0]
+                       [0 5 5]]))
 
-(def Z4 (matrix/array [[0 0 1]
-                       [0 1 1]
-                       [0 1 0]]))
+(def Z4 (matrix/array [[0 0 5]
+                       [0 5 5]
+                       [0 5 0]]))
 
 ;; S
-(def S1 (matrix/array [[0 1 1]
-                       [1 1 0]
+(def S1 (matrix/array [[0 6 6]
+                       [6 6 0]
                        [0 0 0]]))
 
-(def S2 (matrix/array [[1 0 0]
-                       [1 1 0]
-                       [0 1 0]]))
+(def S2 (matrix/array [[6 0 0]
+                       [6 6 0]
+                       [0 6 0]]))
 
 (def S3 (matrix/array [[0 0 0]
-                       [0 1 1]
-                       [1 1 0]]))
+                       [0 6 6]
+                       [6 6 0]]))
 
-(def S4 (matrix/array [[0 1 0]
-                       [0 1 1]
-                       [0 0 1]]))
+(def S4 (matrix/array [[0 6 0]
+                       [0 6 6]
+                       [0 0 6]]))
 
 ;; O
-(def O (cycle (matrix/array [[1 1] [1 1]])))
+(def O (cycle (matrix/array [[7 7] [7 7]])))
 
 ;; Putting it all together
 (def L (cycle [L1 L2 L3 L4]))
