@@ -123,4 +123,4 @@
 (def Z (cycle [Z1 Z2 Z3 Z4]))
 (def S (cycle [S1 S2 S3 S4]))
 
-(def tetromino-matrices {::L L ::J J ::T T ::I I ::S S ::O O})
+(def matrices {::L L ::J J ::T T ::I I ::S S ::O O})
