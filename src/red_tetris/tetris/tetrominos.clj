@@ -1,5 +1,6 @@
 (ns red-tetris.tetris.tetrominos
-  (:require [clojure.core.matrix :as matrix]))
+  (:require [clojure.core.matrix :as matrix]
+            [red-tetris.lib.random-seq :refer [random-seq!]]))
 
 ;; This isn't cljc because of core.matrix
 ;; Technically there's a cljs implementation kind of sort of.
@@ -124,3 +125,6 @@
 (def S (cycle [S1 S2 S3 S4]))
 
 (def tetrominos {::L L ::J J ::T T ::I I ::S S ::O O})
+
+(defn random-tetrominos! []
+  (random-seq! (seq tetromino-keys)))
