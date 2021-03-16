@@ -4,7 +4,7 @@
 ;; This isn't cljc because of core.matrix
 ;; Technically there's a cljs implementation kind of sort of.
 
-(def tetromino-keys [::L ::J ::T ::I ::Z ::S ::O])
+(def tetromino-keys #{::L ::J ::T ::I ::Z ::S ::O})
 
 ;; L
 (def L1 (matrix/array [[1 0 0]
