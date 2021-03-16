@@ -5,6 +5,7 @@
 
 (def dimensions [20 10])
 (def board (matrix/zero-array dimensions))
+(def empty-board (matrix/zero-array dimensions))
 
 (defn- broadcast-tetromino
   "Coerces the shape of a tetromino matrix to the dimensions
